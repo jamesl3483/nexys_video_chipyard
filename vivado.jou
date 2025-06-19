@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 19 11:19:19 2025
+# Process ID         : 1748918
+# Current directory  : /bwrcq/C/jameslukas/chipyard
+# Command line       : vivado -mode tcl
+# Log file           : /bwrcq/C/jameslukas/chipyard/vivado.log
+# Journal file       : /bwrcq/C/jameslukas/chipyard/vivado.jou
+# Running On         : bwrcix-2.EECS.Berkeley.EDU
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux 9.5 (Plow)
+# Processor Detail   : Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 64
+# CPU Logical cores  : 128
+# Host memory        : 1690127 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 1694422 MB
+# Available Virtual  : 985423 MB
+#-----------------------------------------------------------
+get_board_parts
+set_param board.repoPaths /tools/C/jameslukas/chipyard/fpga/fpga-shells/xilinx/nexys_video/board/
+get_board_parts
