@@ -100,7 +100,7 @@ class WithNexysVideoSerialTLToGPIO extends HarnessBinder({
 
 class WithHyperScaleFPGASerialTLToGPIO extends HarnessBinder({
   case (th: HasHarnessInstantiators, port: OldSerialTLPort, chipId: Int) => {
-    val ath = th.asInstanceOf[LazyRawModuleImp].wrapper.asInstanceOf[GeorgeFPGAHarness]
+    val ath = th.asInstanceOf[LazyRawModuleImp].wrapper.asInstanceOf[NexysVideoHarness]
     val harnessIO = IO(chiselTypeOf(port.io)).suggestName(s"serial_tl_old_${port.portId}")
     harnessIO <> port.io
 
