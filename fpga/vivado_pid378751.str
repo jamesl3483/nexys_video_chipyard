@@ -622,3 +622,15 @@ selectCodeEditor("NexysVideoHarness.sv", 551, 591); // ae (NexysVideoHarness.sv)
 // Elapsed time: 85 seconds
 selectCodeEditor("NexysVideoHarness.sv", 874, 815); // ae (NexysVideoHarness.sv)
 selectCodeEditor("NexysVideoHarness.sv", 886, 803); // ae (NexysVideoHarness.sv)
+// Elapsed time: 1381 seconds
+selectCodeEditor("NexysVideoHarness.sv", 560, 430); // ae (NexysVideoHarness.sv)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nexys-video-master.xdc", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+typeControlKey((HResource) null, "nexys-video-master.xdc", 'c'); // ae (nexys-video-master.xdc)
+selectCodeEditor("nexys-video-master.xdc", 461, 532); // ae (nexys-video-master.xdc)
+selectCodeEditor("nexys-video-master.xdc", 545, 524); // ae (nexys-video-master.xdc)
+selectCodeEditor("nexys-video-master.xdc", 551, 510); // ae (nexys-video-master.xdc)
+selectCodeEditor("nexys-video-master.xdc", 878, 746); // ae (nexys-video-master.xdc)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nexys-video-master.xdc", 620, 586); // ae (nexys-video-master.xdc)
+typeControlKey((HResource) null, "nexys-video-master.xdc", 'c'); // ae (nexys-video-master.xdc)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,951 MB. GUI used memory: 81 MB. Current time: 6/20/25, 11:20:58 AM PDT
