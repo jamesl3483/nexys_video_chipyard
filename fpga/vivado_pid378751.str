@@ -637,3 +637,7 @@ typeControlKey((HResource) null, "nexys-video-master.xdc", 'c'); // ae (nexys-vi
 // Elapsed time: 607 seconds
 selectCodeEditor("nexys-video-master.xdc", 498, 434); // ae (nexys-video-master.xdc)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,951 MB. GUI used memory: 81 MB. Current time: 6/20/25, 11:50:58 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,951 MB. GUI used memory: 81 MB. Current time: 6/20/25, 12:20:58 PM PDT
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 3501 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
