@@ -1,0 +1,565 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 19 20:15:58 2025
+# Process ID         : 389226
+# Current directory  : /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1
+# Command line       : vivado -log NexysVideoHarness.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NexysVideoHarness.tcl -notrace
+# Log file           : /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1/NexysVideoHarness.vdi
+# Journal file       : /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1/vivado.jou
+# Running On         : bwrchpg2-7.EECS.Berkeley.EDU
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux 9.4 (Plow)
+# Processor Detail   : Intel(R) Core(TM) i7-6700T CPU @ 2.80GHz
+# CPU Frequency      : 3269.375 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 33262 MB
+# Swap memory        : 34359 MB
+# Total Virtual      : 67621 MB
+# Available Virtual  : 57925 MB
+#-----------------------------------------------------------
+source NexysVideoHarness.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/commercial/xilinx/Vivado/2024.2/data/ip'.
+Command: link_design -top NexysVideoHarness -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.53 . Memory (MB): peak = 1910.078 ; gain = 0.000 ; free physical = 9757 ; free virtual = 54575
+INFO: [Netlist 29-17] Analyzing 4621 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/harnessSysPLLNode/harnessSysPLLNode_board.xdc] for cell 'harnessSysPLLNode/inst'
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/harnessSysPLLNode/harnessSysPLLNode_board.xdc] for cell 'harnessSysPLLNode/inst'
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/harnessSysPLLNode/harnessSysPLLNode.xdc] for cell 'harnessSysPLLNode/inst'
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/harnessSysPLLNode/harnessSysPLLNode.xdc] for cell 'harnessSysPLLNode/inst'
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/nexysvideomig/nexysvideomig/user_design/constraints/nexysvideomig.xdc] for cell 'mig/island/blackbox'
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/nexysvideomig/nexysvideomig/user_design/constraints/nexysvideomig.xdc] for cell 'mig/island/blackbox'
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-config.xdc]
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-config.xdc]
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'GTP_CLK_N'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GTP_CLK_P'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GTP_CLK_P'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:15]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports GTP_CLK_P]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:15]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'FMC_MGT_CLK_N'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FMC_MGT_CLK_P'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FMC_MGT_CLK_P'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:18]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports FMC_MGT_CLK_P]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:18]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jtagB_tms'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:243]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:243]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_in_bits_phit[0]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:254]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jtagB_tck]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_in_bits_phit[2]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fjtagB_tdi'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_out_bits_phit[2]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:262]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jtagB_tdo'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fmc_la_n[12]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_in_valid'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_in_bits_phit[3]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_in_ready'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_in_bits_phit[1]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_out_valid'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_out_bits_phit[1]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:278]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:278]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_out_bits_phit[0]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_tl_1_out_bits_phit[3]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jtagA_tck'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:284]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jtagA_tdo'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:297]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:297]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jtagA_tms'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:298]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:298]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jtagA_tdi'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/fpga-shells/xilinx/nexys_video/constraints/nexys-video-master.xdc]
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.sdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.sdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.sdc:5]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2826.215 ; gain = 584.672 ; free physical = 9070 ; free virtual = 53882
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.sdc]
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.xdc]
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, constant path, bel, site, slr'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.xdc:5]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_rxd]]'. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig.shell.xdc]
+Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/harnessSysPLLNode/harnessSysPLLNode_late.xdc] for cell 'harnessSysPLLNode/inst'
+Finished Parsing XDC File [/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/obj/ip/harnessSysPLLNode/harnessSysPLLNode_late.xdc] for cell 'harnessSysPLLNode/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2826.215 ; gain = 0.000 ; free physical = 9067 ; free virtual = 53879
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 849 instances were transformed.
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 24 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 770 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 22 instances
+
+12 Infos, 27 Warnings, 28 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 2826.215 ; gain = 1214.504 ; free physical = 9067 ; free virtual = 53879
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 2826.215 ; gain = 0.000 ; free physical = 8821 ; free virtual = 53844
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2826.215 ; gain = 0.000 ; free physical = 8900 ; free virtual = 53826
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8594 ; free virtual = 53520
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8594 ; free virtual = 53520
+Phase 1 Initialization | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8594 ; free virtual = 53520
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.94 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8594 ; free virtual = 53519
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8585 ; free virtual = 53510
+Phase 2 Timer Update And Timing Data Collection | Checksum: 24a1f8985
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8585 ; free virtual = 53510
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 86 inverters resulting in an inversion of 1612 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1973dd1d7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8584 ; free virtual = 53509
+Retarget | Checksum: 1973dd1d7
+INFO: [Opt 31-389] Phase Retarget created 28 cells and removed 145 cells
+INFO: [Opt 31-1021] In phase Retarget, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1f5f8b87c
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8584 ; free virtual = 53509
+Constant propagation | Checksum: 1f5f8b87c
+INFO: [Opt 31-389] Phase Constant propagation created 65 cells and removed 135 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8584 ; free virtual = 53509
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8582 ; free virtual = 53508
+Phase 5 Sweep | Checksum: 127353fd0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3141.113 ; gain = 0.000 ; free physical = 8581 ; free virtual = 53507
+Sweep | Checksum: 127353fd0
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 69 cells
+INFO: [Opt 31-1021] In phase Sweep, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 127353fd0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53506
+BUFG optimization | Checksum: 127353fd0
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 127353fd0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53506
+Shift Register Optimization | Checksum: 127353fd0
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 127353fd0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53507
+Post Processing Netlist | Checksum: 127353fd0
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2284f8daf
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53506
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3173.129 ; gain = 0.000 ; free physical = 8581 ; free virtual = 53506
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2284f8daf
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53506
+Phase 9 Finalization | Checksum: 2284f8daf
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53506
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              28  |             145  |                                             20  |
+|  Constant propagation         |              65  |             135  |                                              0  |
+|  Sweep                        |               1  |              69  |                                              2  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2284f8daf
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3173.129 ; gain = 32.016 ; free physical = 8581 ; free virtual = 53506
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 112 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 80 newly gated: 0 Total Ports: 224
+Ending PowerOpt Patch Enables Task | Checksum: 230e34901
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8143 ; free virtual = 53032
+Ending Power Optimization Task | Checksum: 230e34901
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 3774.855 ; gain = 601.727 ; free physical = 8143 ; free virtual = 53032
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 230e34901
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8143 ; free virtual = 53032
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8143 ; free virtual = 53032
+Ending Netlist Obfuscation Task | Checksum: 1a3492021
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8143 ; free virtual = 53032
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 27 Warnings, 28 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:30 . Memory (MB): peak = 3774.855 ; gain = 948.641 ; free physical = 8143 ; free virtual = 53032
+INFO: [Vivado 12-24828] Executing command : report_drc -file NexysVideoHarness_drc_opted.rpt -pb NexysVideoHarness_drc_opted.pb -rpx NexysVideoHarness_drc_opted.rpx
+Command: report_drc -file NexysVideoHarness_drc_opted.rpt -pb NexysVideoHarness_drc_opted.pb -rpx NexysVideoHarness_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1/NexysVideoHarness_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8139 ; free virtual = 53029
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8138 ; free virtual = 53029
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8131 ; free virtual = 53026
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8123 ; free virtual = 53021
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8123 ; free virtual = 53021
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8122 ; free virtual = 53020
+Write Physdb Complete: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8133 ; free virtual = 53031
+INFO: [Common 17-1381] The checkpoint '/bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1/NexysVideoHarness_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8104 ; free virtual = 53010
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8080 ; free virtual = 52992
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 155cb911a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8080 ; free virtual = 52992
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8080 ; free virtual = 52992
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus serial_tl_0_in_bits_phit are not locked:  'serial_tl_0_in_bits_phit[31]'  'serial_tl_0_in_bits_phit[30]'  'serial_tl_0_in_bits_phit[29]'  'serial_tl_0_in_bits_phit[28]'  'serial_tl_0_in_bits_phit[27]'  'serial_tl_0_in_bits_phit[26]'  'serial_tl_0_in_bits_phit[25]'  'serial_tl_0_in_bits_phit[24]'  'serial_tl_0_in_bits_phit[23]'  'serial_tl_0_in_bits_phit[22]'  'serial_tl_0_in_bits_phit[21]'  'serial_tl_0_in_bits_phit[20]'  'serial_tl_0_in_bits_phit[19]'  'serial_tl_0_in_bits_phit[18]'  'serial_tl_0_in_bits_phit[17]'  'serial_tl_0_in_bits_phit[16]'  'serial_tl_0_in_bits_phit[15]'  'serial_tl_0_in_bits_phit[14]'  'serial_tl_0_in_bits_phit[13]'  'serial_tl_0_in_bits_phit[12]'  'serial_tl_0_in_bits_phit[11]'  'serial_tl_0_in_bits_phit[10]'  'serial_tl_0_in_bits_phit[9]'  'serial_tl_0_in_bits_phit[8]'  'serial_tl_0_in_bits_phit[7]'  'serial_tl_0_in_bits_phit[6]'  'serial_tl_0_in_bits_phit[5]'  'serial_tl_0_in_bits_phit[4]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus serial_tl_0_out_bits_phit are not locked:  'serial_tl_0_out_bits_phit[31]'  'serial_tl_0_out_bits_phit[30]'  'serial_tl_0_out_bits_phit[29]'  'serial_tl_0_out_bits_phit[28]'  'serial_tl_0_out_bits_phit[27]'  'serial_tl_0_out_bits_phit[26]'  'serial_tl_0_out_bits_phit[25]'  'serial_tl_0_out_bits_phit[24]'  'serial_tl_0_out_bits_phit[23]'  'serial_tl_0_out_bits_phit[22]'  'serial_tl_0_out_bits_phit[21]'  'serial_tl_0_out_bits_phit[20]'  'serial_tl_0_out_bits_phit[19]'  'serial_tl_0_out_bits_phit[18]'  'serial_tl_0_out_bits_phit[17]'  'serial_tl_0_out_bits_phit[16]'  'serial_tl_0_out_bits_phit[15]'  'serial_tl_0_out_bits_phit[14]'  'serial_tl_0_out_bits_phit[13]'  'serial_tl_0_out_bits_phit[12]'  'serial_tl_0_out_bits_phit[11]'  'serial_tl_0_out_bits_phit[10]'  'serial_tl_0_out_bits_phit[9]'  'serial_tl_0_out_bits_phit[8]'  'serial_tl_0_out_bits_phit[7]'  'serial_tl_0_out_bits_phit[6]'  'serial_tl_0_out_bits_phit[5]'  'serial_tl_0_out_bits_phit[4]' 
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (56) is greater than number of available pins (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 28 sites.
+	Term: serial_tl_0_in_bits_phit[4]
+	Term: serial_tl_0_in_bits_phit[5]
+	Term: serial_tl_0_in_bits_phit[6]
+	Term: serial_tl_0_in_bits_phit[7]
+	Term: serial_tl_0_in_bits_phit[8]
+	Term: serial_tl_0_in_bits_phit[9]
+	Term: serial_tl_0_in_bits_phit[10]
+	Term: serial_tl_0_in_bits_phit[11]
+	Term: serial_tl_0_in_bits_phit[12]
+	Term: serial_tl_0_in_bits_phit[13]
+	Term: serial_tl_0_in_bits_phit[14]
+	Term: serial_tl_0_in_bits_phit[15]
+	Term: serial_tl_0_in_bits_phit[16]
+	Term: serial_tl_0_in_bits_phit[17]
+	Term: serial_tl_0_in_bits_phit[18]
+	Term: serial_tl_0_in_bits_phit[19]
+	Term: serial_tl_0_in_bits_phit[20]
+	Term: serial_tl_0_in_bits_phit[21]
+	Term: serial_tl_0_in_bits_phit[22]
+	Term: serial_tl_0_in_bits_phit[23]
+	Term: serial_tl_0_in_bits_phit[24]
+	Term: serial_tl_0_in_bits_phit[25]
+	Term: serial_tl_0_in_bits_phit[26]
+	Term: serial_tl_0_in_bits_phit[27]
+	Term: serial_tl_0_in_bits_phit[28]
+	Term: serial_tl_0_in_bits_phit[29]
+	Term: serial_tl_0_in_bits_phit[30]
+	Term: serial_tl_0_in_bits_phit[31]
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 28 sites.
+	Term: serial_tl_0_out_bits_phit[4]
+	Term: serial_tl_0_out_bits_phit[5]
+	Term: serial_tl_0_out_bits_phit[6]
+	Term: serial_tl_0_out_bits_phit[7]
+	Term: serial_tl_0_out_bits_phit[8]
+	Term: serial_tl_0_out_bits_phit[9]
+	Term: serial_tl_0_out_bits_phit[10]
+	Term: serial_tl_0_out_bits_phit[11]
+	Term: serial_tl_0_out_bits_phit[12]
+	Term: serial_tl_0_out_bits_phit[13]
+	Term: serial_tl_0_out_bits_phit[14]
+	Term: serial_tl_0_out_bits_phit[15]
+	Term: serial_tl_0_out_bits_phit[16]
+	Term: serial_tl_0_out_bits_phit[17]
+	Term: serial_tl_0_out_bits_phit[18]
+	Term: serial_tl_0_out_bits_phit[19]
+	Term: serial_tl_0_out_bits_phit[20]
+	Term: serial_tl_0_out_bits_phit[21]
+	Term: serial_tl_0_out_bits_phit[22]
+	Term: serial_tl_0_out_bits_phit[23]
+	Term: serial_tl_0_out_bits_phit[24]
+	Term: serial_tl_0_out_bits_phit[25]
+	Term: serial_tl_0_out_bits_phit[26]
+	Term: serial_tl_0_out_bits_phit[27]
+	Term: serial_tl_0_out_bits_phit[28]
+	Term: serial_tl_0_out_bits_phit[29]
+	Term: serial_tl_0_out_bits_phit[30]
+	Term: serial_tl_0_out_bits_phit[31]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    35 |     8 | LVCMOS33(8)                                                            |                                          |        |  +3.30 |    YES |     |
+| 14 |    50 |     2 | LVCMOS33(2)                                                            |                                          |        |  +3.30 |    YES |     |
+| 15 |    50 |     2 | LVCMOS12(2)                                                            |                                          |        |  +1.20 |    YES |     |
+| 16 |    50 |    15 | LVCMOS12(15)                                                           |                                          |        |  +1.20 |    YES |     |
+| 34 |    50 |     1 | LVCMOS33(1)                                                            |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |    49 | LVCMOS15(2)  SSTL15(41)  DIFF_SSTL15(6)                                |                                          |  +0.75 |  +1.50 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   285 |    77 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 13     | led_0                | LVCMOS33        | IOB_X0Y70            | T14                  |                      |
+|        | led_1                | LVCMOS33        | IOB_X0Y69            | T15                  |                      |
+|        | led_2                | LVCMOS33        | IOB_X0Y66            | T16                  |                      |
+|        | led_3                | LVCMOS33        | IOB_X0Y65            | U16                  |                      |
+|        | led_4                | LVCMOS33        | IOB_X0Y71            | V15                  |                      |
+|        | led_5                | LVCMOS33        | IOB_X0Y67            | W16                  |                      |
+|        | led_6                | LVCMOS33        | IOB_X0Y68            | W15                  |                      |
+|        | led_7                | LVCMOS33        | IOB_X0Y90            | Y13                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 14     | uart_rxd             | LVCMOS33        | IOB_X0Y122           | V18                  |                      |
+|        | uart_txd             | LVCMOS33        | IOB_X0Y120           | AA19                 |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 15     | sw_6                 | LVCMOS12        | IOB_X0Y162           | K13                  |                      |
+|        | sw_7                 | LVCMOS12        | IOB_X0Y150           | M17                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 16     | reset_A              | LVCMOS12        | IOB_X0Y222           | E19                  |                      |
+|        | reset_B              | LVCMOS12        | IOB_X0Y204           | E21                  |                      |
+|        | serial_tl_0_clock_in | LVCMOS12        | IOB_X0Y228           | B17                  |                      |
+|        | tl_0_in_bits_phit[0] | LVCMOS12        | IOB_X0Y230           | A13                  |                      |
+|        | tl_0_in_bits_phit[1] | LVCMOS12        | IOB_X0Y241           | E14                  |                      |
+|        | tl_0_in_bits_phit[2] | LVCMOS12        | IOB_X0Y229           | A14                  |                      |
+|        | tl_0_in_bits_phit[3] | LVCMOS12        | IOB_X0Y248           | F13                  |                      |
+|        | serial_tl_0_in_ready | LVCMOS12        | IOB_X0Y233           | B13                  |                      |
+|        | serial_tl_0_in_valid | LVCMOS12        | IOB_X0Y242           | E13                  |                      |
+|        | l_0_out_bits_phit[0] | LVCMOS12        | IOB_X0Y244           | C14                  |                      |
+|        | l_0_out_bits_phit[1] | LVCMOS12        | IOB_X0Y235           | B16                  |                      |
+|        | l_0_out_bits_phit[2] | LVCMOS12        | IOB_X0Y236           | B15                  |                      |
+|        | l_0_out_bits_phit[3] | LVCMOS12        | IOB_X0Y245           | E17                  |                      |
+|        | erial_tl_0_out_ready | LVCMOS12        | IOB_X0Y246           | F16                  |                      |
+|        | erial_tl_0_out_valid | LVCMOS12        | IOB_X0Y221           | D19                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | sys_clock            | LVCMOS33        | IOB_X1Y124           | R4                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | ddr_ddr3_ck_p        | DIFF_SSTL15     | IOB_X1Y158           | P5                   |                      |
+|        | ddr_ddr3_ck_n        | DIFF_SSTL15     | IOB_X1Y157           | P4                   |                      |
+|        | ddr_ddr3_dqs_p[0]    | DIFF_SSTL15     | IOB_X1Y182           | K2                   |                      |
+|        | ddr_ddr3_dqs_n[0]    | DIFF_SSTL15     | IOB_X1Y181           | J2                   |                      |
+|        | ddr_ddr3_dqs_p[1]    | DIFF_SSTL15     | IOB_X1Y194           | E1                   |                      |
+|        | ddr_ddr3_dqs_n[1]    | DIFF_SSTL15     | IOB_X1Y193           | D1                   |                      |
+|        | ddr_ddr3_addr[0]     | SSTL15          | IOB_X1Y167           | M2                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[10]    | SSTL15          | IOB_X1Y164           | L5                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[11]    | SSTL15          | IOB_X1Y151           | N5                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[12]    | SSTL15          | IOB_X1Y162           | N4                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[13]    | SSTL15          | IOB_X1Y156           | P2                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[14]    | SSTL15          | IOB_X1Y152           | P6                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[1]     | SSTL15          | IOB_X1Y153           | M5                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[2]     | SSTL15          | IOB_X1Y168           | M3                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[3]     | SSTL15          | IOB_X1Y170           | M1                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[4]     | SSTL15          | IOB_X1Y150           | L6                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[5]     | SSTL15          | IOB_X1Y159           | P1                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[6]     | SSTL15          | IOB_X1Y161           | N3                   | VRef=+0.75*          |
+|        | ddr_ddr3_addr[7]     | SSTL15          | IOB_X1Y155           | N2                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[8]     | SSTL15          | IOB_X1Y154           | M6                   | VRef=+0.75           |
+|        | ddr_ddr3_addr[9]     | SSTL15          | IOB_X1Y160           | R1                   | VRef=+0.75           |
+|        | ddr_ddr3_ba[0]       | SSTL15          | IOB_X1Y172           | L3                   | VRef=+0.75           |
+|        | ddr_ddr3_ba[1]       | SSTL15          | IOB_X1Y166           | K6                   | VRef=+0.75           |
+|        | ddr_ddr3_ba[2]       | SSTL15          | IOB_X1Y163           | L4                   | VRef=+0.75           |
+|        | ddr_ddr3_cas_n       | SSTL15          | IOB_X1Y171           | K3                   | VRef=+0.75           |
+|        | ddr_ddr3_cke         | SSTL15          | IOB_X1Y165           | J6                   | VRef=+0.75           |
+|        | ddr_ddr3_dm[0]       | SSTL15          | IOB_X1Y177           | G3                   | VRef=+0.75           |
+|        | ddr_ddr3_dm[1]       | SSTL15          | IOB_X1Y189           | F1                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[0]       | SSTL15          | IOB_X1Y183           | G2                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[10]      | SSTL15          | IOB_X1Y188           | F3                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[11]      | SSTL15          | IOB_X1Y191           | D2                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[12]      | SSTL15          | IOB_X1Y196           | C2                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[13]      | SSTL15          | IOB_X1Y197           | A1                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[14]      | SSTL15          | IOB_X1Y192           | E2                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[15]      | SSTL15          | IOB_X1Y198           | B1                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[1]       | SSTL15          | IOB_X1Y176           | H4                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[2]       | SSTL15          | IOB_X1Y179           | H5                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[3]       | SSTL15          | IOB_X1Y185           | J1                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[4]       | SSTL15          | IOB_X1Y186           | K1                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[5]       | SSTL15          | IOB_X1Y178           | H3                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[6]       | SSTL15          | IOB_X1Y184           | H2                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[7]       | SSTL15          | IOB_X1Y180           | J5                   | VRef=+0.75           |
+|        | ddr_ddr3_dq[8]       | SSTL15          | IOB_X1Y187           | E3                   | VRef=+0.75*          |
+|        | ddr_ddr3_dq[9]       | SSTL15          | IOB_X1Y195           | B2                   | VRef=+0.75           |
+|        | ddr_ddr3_odt         | SSTL15          | IOB_X1Y174           | K4                   | VRef=+0.75           |
+|        | ddr_ddr3_ras_n       | SSTL15          | IOB_X1Y173           | J4                   | VRef=+0.75           |
+|        | ddr_ddr3_reset_n     | LVCMOS15        | IOB_X1Y190           | G1                   |                      |
+|        | ddr_ddr3_we_n        | SSTL15          | IOB_X1Y169           | L1                   | VRef=+0.75           |
+|        | reset                | LVCMOS15        | IOB_X1Y175           | G4                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 19d83133a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8085 ; free virtual = 52996
+Phase 1 Placer Initialization | Checksum: 19d83133a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8085 ; free virtual = 52997
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 19695d4e8
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3774.855 ; gain = 0.000 ; free physical = 8085 ; free virtual = 52997
+57 Infos, 29 Warnings, 28 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 19 20:17:23 2025...

@@ -634,3 +634,6 @@ selectCodeEditor("nexys-video-master.xdc", 878, 746); // ae (nexys-video-master.
 selectCodeEditor("nexys-video-master.xdc", 620, 586); // ae (nexys-video-master.xdc)
 typeControlKey((HResource) null, "nexys-video-master.xdc", 'c'); // ae (nexys-video-master.xdc)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,951 MB. GUI used memory: 81 MB. Current time: 6/20/25, 11:20:58 AM PDT
+// Elapsed time: 607 seconds
+selectCodeEditor("nexys-video-master.xdc", 498, 434); // ae (nexys-video-master.xdc)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,951 MB. GUI used memory: 81 MB. Current time: 6/20/25, 11:50:58 AM PDT

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 19 20:15:58 2025
+# Process ID         : 389226
+# Current directory  : /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1
+# Command line       : vivado -log NexysVideoHarness.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NexysVideoHarness.tcl -notrace
+# Log file           : /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1/NexysVideoHarness.vdi
+# Journal file       : /bwrcq/C/junsun/nexys_video_chipyard/fpga/generated-src/chipyard.fpga.nexysvideo.NexysVideoHarness.RocketNexysVideoConfig/NexysVideoHarness.runs/impl_1/vivado.jou
+# Running On         : bwrchpg2-7.EECS.Berkeley.EDU
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux 9.4 (Plow)
+# Processor Detail   : Intel(R) Core(TM) i7-6700T CPU @ 2.80GHz
+# CPU Frequency      : 3269.375 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 33262 MB
+# Swap memory        : 34359 MB
+# Total Virtual      : 67621 MB
+# Available Virtual  : 57925 MB
+#-----------------------------------------------------------
+source NexysVideoHarness.tcl -notrace

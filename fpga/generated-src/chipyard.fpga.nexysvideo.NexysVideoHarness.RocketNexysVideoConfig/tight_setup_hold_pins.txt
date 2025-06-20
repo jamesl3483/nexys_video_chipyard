@@ -1,0 +1,6 @@
++============================+============================+==========================================================================================================+
+| Launch Setup Clock         | Launch Hold Clock          | Pin                                                                                                      |
++============================+============================+==========================================================================================================+
+| clk_out1_harnessSysPLLNode | clk_out1_harnessSysPLLNode | chiptop0/system/tile_prci_domain/element_reset_domain_rockettile/fpuOpt/regfile_ext/Memory_reg[14][52]/D |
+| clk_out1_harnessSysPLLNode | clk_out1_harnessSysPLLNode | chiptop0/system/tile_prci_domain/element_reset_domain_rockettile/fpuOpt/regfile_ext/Memory_reg[1][52]/D  |
++----------------------------+----------------------------+----------------------------------------------------------------------------------------------------------+
