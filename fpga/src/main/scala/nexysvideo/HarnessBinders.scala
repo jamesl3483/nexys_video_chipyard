@@ -98,3 +98,76 @@ class WithNexysVideoSerialTLToGPIO extends HarnessBinder({
   }
 })
 
+class WithHyperScaleFPGASerialTLToGPIO extends HarnessBinder({
+  case (th: HasHarnessInstantiators, port: OldSerialTLPort, chipId: Int) => {
+    val ath = th.asInstanceOf[LazyRawModuleImp].wrapper.asInstanceOf[GeorgeFPGAHarness]
+    val harnessIO = IO(chiselTypeOf(port.io)).suggestName(s"serial_tl_old_${port.portId}")
+    harnessIO <> port.io
+
+    harnessIO match {
+      case io: testchipip.serdes.old.DecoupledSerialIO => {
+        val clkIO = io match {
+          case io: testchipip.serdes.old.InternalSyncSerialIO => IOPin(io.clock_out)
+          case io: testchipip.serdes.old.ExternalSyncSerialIO => IOPin(io.clock_in)
+        }
+
+        val packagePinsWithPackageIOs = if (port.portId == 0) {
+          Seq(
+            ("B18", clkIO),
+
+            ("E13", IOPin(io.in.valid)),
+            ("B13", IOPin(io.in.ready)),
+
+            ("A13", IOPin(io.in.bits, 0)),
+            ("E14", IOPin(io.in.bits, 1)),
+            ("A14", IOPin(io.in.bits, 2)),
+            ("F13", IOPin(io.in.bits, 3)),
+
+            ("D19", IOPin(io.out.valid)),
+            ("F16", IOPin(io.out.ready)),
+
+            ("C14", IOPin(io.out.bits, 0)),
+            ("B16", IOPin(io.out.bits, 1)),
+            ("B15", IOPin(io.out.bits, 2)),
+            ("E17", IOPin(io.out.bits, 3)),
+          )
+        } else {
+          Seq(
+            ("B18", clkIO),
+
+            ("E13", IOPin(io.in.valid)),
+            ("B13", IOPin(io.in.ready)),
+
+
+            ("A13", IOPin(io.in.bits, 0)),
+
+            ("D19", IOPin(io.out.valid)),
+            ("F16", IOPin(io.out.ready)),
+
+            ("C14", IOPin(io.out.bits, 0)),
+          )
+        }
+        packagePinsWithPackageIOs foreach { case (pin, io) => {
+          ath.xdc.addPackagePin(io, pin)
+          ath.xdc.addIOStandard(io, "LVCMOS12")
+        }}
+
+        // // Don't add IOB to the clock, if its an input
+        // io match {
+        //   case io: testchipip.serdes.old.InternalSyncSerialIO => packagePinsWithPackageIOs foreach { case (pin, io) => {
+        //     ath.xdc.addIOB(io)
+        //   }}
+        //   case io: testchipip.serdes.old.ExternalSyncSerialIO => packagePinsWithPackageIOs.drop(1).foreach { case (pin, io) => {
+        //     ath.xdc.addIOB(io)
+        //   }}
+        // }
+
+        ath.sdc.addClock("ser_tl_clock", clkIO, 100)
+        ath.sdc.addGroup(pins = Seq(clkIO))
+        ath.xdc.clockDedicatedRouteFalse(clkIO)
+      }
+    }
+  }
+})
+
+

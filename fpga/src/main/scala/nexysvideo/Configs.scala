@@ -70,7 +70,8 @@ class TinyRocketNexysVideoConfig extends Config(
   // DOC include end: WithTinyNexysVideoTweaks and Rocket
 
 class BringupNexysVideoConfig extends Config(
-  new WithNexysVideoSerialTLToGPIO ++
-  new WithNexysVideoTweaks(freqMHz = 75) ++
+  new WithHyperScaleFPGASerialTLToGPIO ++
+  // new WithNexysVideoSerialTLToGPIO ++
+  new WithNexysVideoTweaks(freqMHz = 50) ++
   new chipyard.ChipBringupHostConfig)
 

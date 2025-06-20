@@ -1,0 +1,50 @@
+diff --git a/generators/chipyard/src/main/scala/iobinders/IOBinders.scala b/generators/chipyard/src/main/scala/iobinders/IOBinders.scala
+index a9232476..b02af4ac 100644
+--- a/generators/chipyard/src/main/scala/iobinders/IOBinders.scala
++++ b/generators/chipyard/src/main/scala/iobinders/IOBinders.scala
+@@ -388,6 +388,29 @@ class WithSerialTLPunchthrough extends OverrideIOBinder({
+   }
+ })
+ 
++class WithOldSerialTLIOCells extends OverrideIOBinder({
++  (system: testchipip.serdes.old.CanHavePeripheryTLSerial) => {
++    val (ports, cells) = system.old_serial_tls.zipWithIndex.map({ case (s, id) =>
++      val sys = system.asInstanceOf[BaseSubsystem]
++      val (port, cells) = IOCell.generateIOFromSignal(s.getWrappedValue, s"serial_tl_$id", sys.p(IOCellKey), abstractResetAsAsync = true)
++      (OldSerialTLPort(() => port, sys.p(testchipip.serdes.old.SerialTLKey)(id), system.old_serdessers(id), id), cells)
++    }).unzip
++    (ports.toSeq, cells.flatten.toSeq)
++  }
++})
++
++class WithOldSerialTLPunchthrough extends OverrideIOBinder({
++  (system: testchipip.serdes.old.CanHavePeripheryTLSerial) => {
++    val (ports, cells) = system.old_serial_tls.zipWithIndex.map({ case (s, id) =>
++      val sys = system.asInstanceOf[BaseSubsystem]
++      val port = IO(chiselTypeOf(s.getWrappedValue)).suggestName(s"sertl_$id")
++      port <> s.getWrappedValue
++      (OldSerialTLPort(() => port, sys.p(testchipip.serdes.old.SerialTLKey)(id), system.old_serdessers(id), id), Nil)
++    }).unzip
++    (ports.toSeq, cells.flatten.toSeq)
++  }
++})
++
+ class WithAXI4MemPunchthrough extends OverrideLazyIOBinder({
+   (system: CanHaveMasterAXI4MemPort) => {
+     implicit val p: Parameters = GetSystemParameters(system)
+
+
+diff --git a/generators/chipyard/src/main/scala/iobinders/Ports.scala b/generators/chipyard/src/main/scala/iobinders/Ports.scala
+index 93c95416..737962e0 100644
+--- a/generators/chipyard/src/main/scala/iobinders/Ports.scala
++++ b/generators/chipyard/src/main/scala/iobinders/Ports.scala
+@@ -76,6 +76,9 @@ case class JTAGPort        (val getIO: () => JTAGChipIO)
+ case class SerialTLPort    (val getIO: () => Data, val params: SerialTLParams, val serdesser: TLSerdesser, val portId: Int)
+     extends Port[Data]
+ 
++case class OldSerialTLPort    (val getIO: () => Data, val params: testchipip.serdes.old.SerialTLParams, val serdesser: testchipip.serdes.old.TLSerdesser, val portId: Int)
++    extends Port[Data]
++
+ case class ChipIdPort      (val getIO: () => UInt)
+     extends Port[UInt]
+ 

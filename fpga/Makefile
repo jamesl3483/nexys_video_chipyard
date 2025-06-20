@@ -49,7 +49,8 @@ ifeq ($(SUB_PROJECT),nexysvideo)
 	MODEL             ?= NexysVideoHarness
 	VLOG_MODEL        ?= NexysVideoHarness
 	MODEL_PACKAGE     ?= chipyard.fpga.nexysvideo
-	CONFIG            ?= RocketNexysVideoConfig
+	CONFIG            ?= BringupNexysVideoConfig
+	# CONFIG            ?= RocketNexysVideoConfig
 	CONFIG_PACKAGE    ?= chipyard.fpga.nexysvideo
 	GENERATOR_PACKAGE ?= chipyard
 	TB                ?= none # unused
